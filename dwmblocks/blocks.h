@@ -6,6 +6,7 @@ static const Block blocks[] = {
     { "upd: ",  "dnf check-update | wc -l",                     3600, 3 },
     { "wth: ",  "curl -s 'wttr.in/?format=1'",                  1800, 4 },
     { "dat: ",  "date '+%a %d %b %H:%M'",                         10, 5 },
+    { "bat: ", "acpi | awk -F ', ' '{print $2}'",                 30, 6 },
 };
 
 //sets delimiter between status commands. NULL character ('\0') means no delimiter.
