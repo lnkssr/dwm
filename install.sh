@@ -9,6 +9,7 @@ cd ../slock
 # change config in slock 
 make && sudo make install
 # This will overwrite your previous configuration
+cd ..
 cp -r .config/ ~/
 sudo cp startdwm.sh /usr/local/bin/
 # write start file in xinitrc 
