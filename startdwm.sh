@@ -1,6 +1,10 @@
 #!/bin/sh
 
-feh --bg-scale ~/Downloads/wp.png
+nm-applet &
+flameshot &
+udiskie --no-notify &
+xrandr --rate 144
+feh --bg-scale ~/wp.png
 setxkbmap us,ru -option 'grp:caps_toggle'
 dwmblocks &
 
